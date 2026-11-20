@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Sis Adası</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="game"></div>
+
+<div id="menu" class="screen">
+  <div class="title">SİS ADASI</div>
+  <div class="subtitle">Kayıp Işık</div>
+  <button id="start">OYNA</button>
+  <button id="continue" class="secondary">KAYDI SÜRDÜR</button>
+  <div class="small">3D hikâye macerası • mobil ve PC</div>
+</div>
+
+<div id="hud" class="hidden">
+  <div class="top">
+    <div class="brand">SİS ADASI</div>
+    <div class="bars">
+      <div class="bar"><i id="hp"></i></div>
+      <div class="bar stamina"><i id="stamina"></i></div>
+    </div>
+    <div class="objective"><b>GÖREV</b><span id="quest">Ada Bekçisi'ni bul</span></div>
+  </div>
+  <div id="interaction" class="interaction hidden">E — Etkileş</div>
+  <div id="message"></div>
+</div>
+
+<div id="dialog" class="screen hidden">
+  <div class="dialog">
+    <div class="speaker" id="speaker">Ada Bekçisi</div>
+    <p id="dialogText"></p>
+    <div class="choices" id="choices"></div>
+    <button id="dialogNext">DEVAM</button>
+  </div>
+</div>
+
+<div id="pause" class="screen hidden">
+  <div class="panel">
+    <div class="title smalltitle">DURAKLATILDI</div>
+    <button id="resume">DEVAM ET</button>
+    <button id="save" class="secondary">KAYDET</button>
+    <button id="restart" class="danger">BAŞTAN BAŞLA</button>
+  </div>
+</div>
+
+<div id="mobile">
+  <div id="stick"><div id="knob"></div></div>
+  <button id="attack">⚔</button>
+  <button id="ability">✦</button>
+  <button id="jump">↑</button>
+</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
